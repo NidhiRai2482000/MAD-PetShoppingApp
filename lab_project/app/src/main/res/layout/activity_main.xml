@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DD0E1"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/signupimg"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/sigpuppage"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/textv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="PET'S CORNER"
+        android:textColor="#311B92"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/textv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Signup"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textv2"
+        android:layout_marginTop="16dp"
+        android:id="@+id/reguser"
+        android:hint="Enter Username"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:textColorHint="#FFFFFF">
+    </EditText>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/reguser"
+        android:layout_marginTop="4dp"
+        android:id="@+id/regpwd"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF">
+    </EditText>
+    <Button
+        android:id="@+id/regsignup"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regpwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#4A148C"
+        android:text="New user?Signup to continue"
+        app:cornerRadius="10dp">
+    </Button>
+    <Button
+        android:id="@+id/regsignin"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regsignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#4A148C"
+        android:text="Have an account?LOGIN"
+        app:cornerRadius="10dp">
+    </Button>
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regsignin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#4A148C"
+        android:text="ARE YOU AN ADMIN?"
+        app:cornerRadius="10dp">
+    </Button>
+</RelativeLayout>
